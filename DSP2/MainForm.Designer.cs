@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.mainFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.paramsPanel = new System.Windows.Forms.GroupBox();
@@ -62,18 +62,18 @@
             // 
             // chart
             // 
-            chartArea3.Name = "ChartArea";
-            this.chart.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea";
+            this.chart.ChartAreas.Add(chartArea1);
             this.chart.Location = new System.Drawing.Point(6, 6);
             this.chart.Name = "chart";
-            series5.ChartArea = "ChartArea";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Name = "Series1";
-            series6.ChartArea = "ChartArea";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Name = "Series2";
-            this.chart.Series.Add(series5);
-            this.chart.Series.Add(series6);
+            series1.ChartArea = "ChartArea";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Name = "Series2";
+            this.chart.Series.Add(series1);
+            this.chart.Series.Add(series2);
             this.chart.Size = new System.Drawing.Size(900, 600);
             this.chart.TabIndex = 0;
             this.chart.Text = "Chart";
@@ -152,6 +152,11 @@
             this.paramKInput.Name = "paramKInput";
             this.paramKInput.Size = new System.Drawing.Size(149, 22);
             this.paramKInput.TabIndex = 4;
+            this.paramKInput.Value = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.paramKInput.ValueChanged += new System.EventHandler(this.ParamChanged);
             // 
             // paramPhiInput
@@ -171,6 +176,11 @@
             this.paramPhiInput.Name = "paramPhiInput";
             this.paramPhiInput.Size = new System.Drawing.Size(149, 22);
             this.paramPhiInput.TabIndex = 5;
+            this.paramPhiInput.Value = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
             this.paramPhiInput.ValueChanged += new System.EventHandler(this.ParamChanged);
             // 
             // MainForm
